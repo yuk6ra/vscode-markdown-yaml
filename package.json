@@ -43,6 +43,7 @@
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^20.11.0",
     "@types/vscode": "^1.72.0",
+    "@vscode/vsce": "^3.7.1",
     "css-loader": "^6.9.0",
     "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
