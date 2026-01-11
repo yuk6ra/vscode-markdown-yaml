@@ -2,7 +2,7 @@
   "name": "vscode-markdown-yaml",
   "displayName": "Markdown YAML Preview",
   "description": "Adds YAML table rendering support to VS Code's built-in Markdown preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "yuk6ra",
   "license": "MIT",
   "icon": "docs/logo.png",
