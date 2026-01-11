@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "publisher": "yuk6ra",
   "license": "MIT",
+  "icon": "docs/logo.png",
   "engines": {
     "vscode": "^1.72.0"
   },
