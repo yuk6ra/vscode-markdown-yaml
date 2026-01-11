@@ -1,0 +1,56 @@
+{
+  "name": "vscode-markdown-yaml",
+  "displayName": "Markdown YAML Preview",
+  "description": "Adds YAML table rendering support to VS Code's built-in Markdown preview",
+  "version": "0.1.0",
+  "publisher": "yuk6ra",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Visualization"
+  ],
+  "keywords": [
+    "markdown",
+    "yaml",
+    "preview",
+    "table"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuk6ra/vscode-markdown-yaml"
+  },
+  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "markdown.previewScripts": [
+      "./dist/preview.bundle.js"
+    ],
+    "markdown.markdownItPlugins": true
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "npm run build:extension && npm run build:preview",
+    "build:extension": "tsc -p ./",
+    "build:preview": "webpack --mode production",
+    "watch": "tsc -watch -p ./",
+    "watch:preview": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.72.0",
+    "css-loader": "^6.9.0",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

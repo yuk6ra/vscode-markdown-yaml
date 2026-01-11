@@ -1,0 +1,91 @@
+.yaml-preview-container {
+  margin: 1em 0;
+}
+
+.yaml-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--vscode-editor-font-family, monospace);
+  font-size: var(--vscode-editor-font-size, 14px);
+}
+
+.yaml-table th,
+.yaml-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid var(--vscode-panel-border, #e0e0e0);
+}
+
+.yaml-table thead {
+  background-color: var(--vscode-editor-background, #f5f5f5);
+}
+
+.yaml-table th {
+  font-weight: 600;
+  color: var(--vscode-foreground, #333);
+  background-color: var(--vscode-sideBar-background, #f0f0f0);
+}
+
+.yaml-table tbody tr:nth-child(even) {
+  background-color: var(--vscode-list-hoverBackground, rgba(0, 0, 0, 0.04));
+}
+
+.yaml-table tbody tr:hover {
+  background-color: var(--vscode-list-activeSelectionBackground, rgba(0, 0, 0, 0.08));
+}
+
+.yaml-key {
+  color: var(--vscode-symbolIcon-propertyForeground, #0066cc);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.yaml-value {
+  color: var(--vscode-foreground, #333);
+  word-break: break-word;
+}
+
+.yaml-frontmatter {
+  border-left: 3px solid var(--vscode-textLink-foreground, #0066cc);
+  padding-left: 12px;
+  margin-bottom: 1.5em;
+}
+
+.yaml-frontmatter::before {
+  content: 'Frontmatter';
+  display: block;
+  font-size: 0.85em;
+  color: var(--vscode-descriptionForeground, #666);
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.yaml-error {
+  padding: 12px;
+  background-color: var(--vscode-inputValidation-errorBackground, #ffebee);
+  border: 1px solid var(--vscode-inputValidation-errorBorder, #f44336);
+  color: var(--vscode-errorForeground, #d32f2f);
+  border-radius: 4px;
+  font-family: var(--vscode-editor-font-family, monospace);
+}
+
+.yaml-table-empty {
+  padding: 12px;
+  color: var(--vscode-descriptionForeground, #666);
+  font-style: italic;
+}
+
+/* Dark theme adjustments using VS Code CSS variables */
+@media (prefers-color-scheme: dark) {
+  .yaml-table th {
+    background-color: var(--vscode-sideBar-background, #252526);
+  }
+
+  .yaml-table tbody tr:nth-child(even) {
+    background-color: var(--vscode-list-hoverBackground, rgba(255, 255, 255, 0.04));
+  }
+
+  .yaml-table tbody tr:hover {
+    background-color: var(--vscode-list-activeSelectionBackground, rgba(255, 255, 255, 0.08));
+  }
+}
